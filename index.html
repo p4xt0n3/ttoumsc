@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ...existing content... -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Tale of Universe : Character Theme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- ...existing content... -->
+</head>
+<body>
+  <!-- ...existing content... -->
+  <header class="topbar">
+    <h1 class="site-title" data-i18n="siteTitle">The Tale of Universe : Character Theme</h1>
+    <button id="langToggle" class="lang-btn" aria-label="Toggle language" title="Toggle language">
+      <svg class="lang-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm7 9c0-1.25-.29-2.43-.8-3.47h-3.02c.17.54.28 1.12.33 1.72h-2.01V12h2.01c-.05.6-.16 1.18-.33 1.72h3.02c.51-1.04.8-2.22.8-3.47zM12 5c1.52 0 2.92.57 3.98 1.5h-2.53C13.06 6.19 12.54 5.5 12 5zm-2.45 0H12c-.54.5-1.06 1.19-1.45 1.5H8.02C9.08 5.57 10.48 5 12 5zM5 12c0 1.25.29 2.43.8 3.47h3.02A8.7 8.7 0 0 1 9.5 12H7.49V10.75H9.5c.05-.6.16-1.18.33-1.72H6.8A8.96 8.96 0 0 0 5 12zm7 7c-1.52 0-2.92-.57-3.98-1.5h2.53c.39.31.91 1 1.45 1.5zm2.45 0H12c.54-.5 1.06-1.19 1.45-1.5h2.53c-1.06.93-2.46 1.5-3.98 1.5z" fill="currentColor"/>
+      </svg>
+      <span id="langLabel">EN</span>
+    </button>
+  </header>
+
+  <main class="content">
+    <section id="cardGrid" class="grid" aria-label="Characters"></section>
+  </main>
+
+  <!-- Modal for character details -->
+  <div id="charModal" class="modal" aria-hidden="true" role="dialog" aria-label="Character details">
+    <div class="modal-panel" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Close">×</button>
+      <div class="modal-body">
+        <img id="modalThumb" src="" alt="" class="modal-thumb" />
+        <h2 id="modalName" class="modal-name"></h2>
+        <h3 id="modalNameCn" class="modal-name-cn"></h3>
+        <ul id="modalSongs" class="modal-songs" aria-label="Songs"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "#app": "./main.js",
+      "#lan": "./lan.js",
+      "#chr": "./chr.js"
+    }
+  }
+  </script>
+  <script type="module">
+    import "#app";
+  </script>
+  <!-- ...existing content... -->
+</body>
+</html>
