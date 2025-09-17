@@ -9,7 +9,8 @@ const ui = {
 const names = {
   gp: { en: 'Geneti Phulst', cn: '杰尼提·法斯特' },
   nr: { en: 'Nathan Redshed', cn: '内森·雷德谢德' },
-  px: { en: 'Paxton', cn: '帕克斯顿' }
+  px: { en: 'Paxton', cn: '帕克斯顿' },
+  da: { en: 'Deep Abyss', cn: '极渊' }
 };
 
 // songs keyed by character id
@@ -31,6 +32,15 @@ const songs = {
   px: [
     { file: 'Guardian of the Cosmos.mp3', en: 'Guardian of the Cosmos', cn: '宇宙的守卫' },
     { file: 'Core of The Universe and All Knowledge.mp3', en: 'Core of The Universe and All Knowledge', cn: '宇宙与全部知识核心' }
+  ],
+  da: [
+    { file: 'Lethal in the Dark Shadow.mp3', en: 'Lethal in the Dark Shadow', cn: '影中之危' },
+    { file: 'Trandril Sprint.mp3', en: 'Trandril Sprint', cn: '安静追逐' },
+    { file: 'Silence.mp3', en: 'Silence', cn: '静' },
+    { file: 'THE DEEP ABYSS!!.mp3', en: 'THE DEEP ABYSS!!', cn: '极度深渊！！' },
+    { file: 'Calm.mp3', en: 'Calm', cn: '平静' },
+    { file: 'The time is up.mp3', en: 'The time is up', cn: '时辰已到' },
+    { file: 'Uneasy.mp3', en: 'Uneasy', cn: '非简' }
   ]
 };
 

@@ -3,7 +3,8 @@ import { getLang, tName } from '#lan';
 export const characters = [
   { id: 'gp', img: 'gp.jpg', alt: 'Geneti Phulst' },
   { id: 'nr', img: 'nr.jpg', alt: 'Nathan Redshed' },
-  { id: 'px', img: 'px.jpg', alt: 'Paxton' }
+  { id: 'px', img: 'px.jpg', alt: 'Paxton' },
+  { id: 'da', img: 'da.jpg', alt: 'Deep Abyss' }
 ];
 
 export function renderCards(container) {

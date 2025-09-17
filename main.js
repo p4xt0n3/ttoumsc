@@ -28,7 +28,7 @@ function openModalFor(id) {
   const songsList = document.getElementById('modalSongs');
   const ch = characters.find(c => c.id === id);
   // hide image for Geneti (gp) to free space; show for others
-  if (id === 'gp' || id === 'nr' || id === 'px') { thumb.style.display = 'none'; thumb.src = ''; thumb.alt = ''; }
+  if (id === 'gp' || id === 'nr' || id === 'px' || id === 'da') { thumb.style.display = 'none'; thumb.src = ''; thumb.alt = ''; }
   else { thumb.style.display = ''; thumb.src = ch ? ch.img : ''; thumb.alt = ch ? ch.alt : ''; }
   name.textContent = tName(id);
   nameCn.textContent = tNameCn(id);
