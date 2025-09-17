@@ -23,6 +23,14 @@ const songs = {
     { file: 'Incoercibilis.mp3', en: 'Incoercibilis', cn: '无法控制' },
     { file: 'Caedes Fluitans.mp3', en: 'Caedes Fluitans', cn: '漂浮屠杀' },
     { file: 'Vera Alternativa.mp3', en: 'Vera Alternativa', cn: '真实伪人' }
+  ],
+  nr: [
+    { file: 'Eos Trucidavit.mp3', en: 'Eos Trucidavit', cn: '他屠杀了他们' },
+    { file: 'Ashes Drop Hard.mp3', en: 'Ashes Drop Hard', cn: '尘落' }
+  ],
+  px: [
+    { file: 'Guardian of the Cosmos.mp3', en: 'Guardian of the Cosmos', cn: '宇宙的守卫' },
+    { file: 'Core of The Universe and All Knowledge.mp3', en: 'Core of The Universe and All Knowledge', cn: '宇宙与全部知识核心' }
   ]
 };
 
@@ -35,3 +43,4 @@ export function toggleLang() { current = current === LANG.EN ? LANG.CN : LANG.EN
 export function onLangChange(fn) { listeners.add(fn); return () => listeners.delete(fn); }
 export function tUI(key) { return (ui[key] && ui[key][current]) || key; }
 export function tName(id) { return (names[id] && names[id][current]) || id; }
+export function tNameCn(id) { return (names[id] && names[id]['cn']) || ''; }

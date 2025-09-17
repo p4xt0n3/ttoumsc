@@ -1,4 +1,4 @@
-import { toggleLang, onLangChange, getLang, tUI, getSongs, tSongTitle, tName } from '#lan';
+import { toggleLang, onLangChange, getLang, tUI, getSongs, tSongTitle, tName, tNameCn } from '#lan';
 import { renderCards, characters } from '#chr';
 
 const grid = document.getElementById('cardGrid');
@@ -28,10 +28,10 @@ function openModalFor(id) {
   const songsList = document.getElementById('modalSongs');
   const ch = characters.find(c => c.id === id);
   // hide image for Geneti (gp) to free space; show for others
-  if (id === 'gp') { thumb.style.display = 'none'; thumb.src = ''; thumb.alt = ''; }
+  if (id === 'gp' || id === 'nr' || id === 'px') { thumb.style.display = 'none'; thumb.src = ''; thumb.alt = ''; }
   else { thumb.style.display = ''; thumb.src = ch ? ch.img : ''; thumb.alt = ch ? ch.alt : ''; }
   name.textContent = tName(id);
-  nameCn.textContent = (function(){ const n = { gp: '杰尼提·法斯特' }; return n[id] || ''; })();
+  nameCn.textContent = tNameCn(id);
   songsList.innerHTML = getSongs(id).map((s, i) => `
     <li class="song-item">
       <div class="song-title">${tSongTitle(id, i)}</div>
@@ -51,7 +51,7 @@ function closeModal() {
 }
 
 window.addEventListener('char:open', e => {
-  if (e?.detail?.id === 'gp') openModalFor('gp');
+  if (e?.detail?.id) openModalFor(e.detail.id);
 });
 
 document.getElementById('modalClose').addEventListener('click', closeModal);
