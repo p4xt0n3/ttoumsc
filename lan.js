@@ -26,7 +26,8 @@ const songs = {
     { file: 'Chaotic.mp3', en: 'Chaotic', cn: '混乱' },
     { file: 'Incoercibilis.mp3', en: 'Incoercibilis', cn: '无法控制' },
     { file: 'Caedes Fluitans.mp3', en: 'Caedes Fluitans', cn: '漂浮屠杀' },
-    { file: 'Vera Alternativa.mp3', en: 'Vera Alternativa', cn: '真实伪人' }
+    { file: 'Vera Alternativa.mp3', en: 'Vera Alternativa', cn: '真实伪人' },
+    { file: 'Smoothly.mp3', en: 'Smoothly', cn: '平滑'}
   ],
   nr: [
     { file: 'Eos Trucidavit.mp3', en: 'Eos Trucidavit', cn: '他屠杀了他们' },
