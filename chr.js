@@ -4,7 +4,10 @@ export const characters = [
   { id: 'gp', img: 'gp.jpg', alt: 'Geneti Phulst' },
   { id: 'nr', img: 'nr.jpg', alt: 'Nathan Redshed' },
   { id: 'px', img: 'px.jpg', alt: 'Paxton' },
-  { id: 'da', img: 'da.jpg', alt: 'Deep Abyss' }
+  { id: 'da', img: 'da.jpg', alt: 'Deep Abyss' },
+  { id: 'lr', img: 'lr.jpg', alt: 'Lauris RaruzY' },
+  { id: '87', img: '87.jpg', alt: '87' },
+  { id: 'tm', img: 'tm.jpg', alt: 'The Manifestation' }
 ];
 
 export function renderCards(container) {

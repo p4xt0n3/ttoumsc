@@ -10,7 +10,10 @@ const names = {
   gp: { en: 'Geneti Phulst', cn: '杰尼提·法斯特' },
   nr: { en: 'Nathan Redshed', cn: '内森·雷德谢德' },
   px: { en: 'Paxton', cn: '帕克斯顿' },
-  da: { en: 'Deep Abyss', cn: '极渊' }
+  da: { en: 'Deep Abyss', cn: '极渊' },
+  lr: { en: 'Lauris RaruzY', cn: '劳瑞斯·拉鲁齐' },
+  '87': { en: '87', cn: '87' },
+  tm: { en: 'The Manifestation', cn: '表·现·形·式' }
 };
 
 // songs keyed by character id
@@ -41,6 +44,20 @@ const songs = {
     { file: 'Calm.mp3', en: 'Calm', cn: '平静' },
     { file: 'The time is up.mp3', en: 'The time is up', cn: '时辰已到' },
     { file: 'Uneasy.mp3', en: 'Uneasy', cn: '非简' }
+  ],
+  // new entries with no songs yet
+  lr: [
+    { file: 'The True Speech.mp3', en: 'The True Speech', cn: '真实之言' },
+    { file: 'Voidus Fists.mp3', en: 'Voidus Fists', cn: '虚渊之拳' }
+  ],
+  '87': [
+    { file: 'The 87.mp3', en: 'The 87', cn: '87' },
+    { file: 'THE DEATH OF 87!!.mp3', en: 'THE DEATH OF 87!!', cn: '87之死！！' },
+    { file: 'WATASHIWA 87!!.mp3', en: 'WATASHIWA 87!!', cn: '吾为87！！' }
+  ],
+  tm: [
+    { file: 'Manifestating into You.mp3', en: 'Manifestating into You', cn: '表现为你' },
+    { file: 'The Manifestation.mp3', en: 'The Manifestation', cn: '表·现·形·式' }
   ]
 };
 
